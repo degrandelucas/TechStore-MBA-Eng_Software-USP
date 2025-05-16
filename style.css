@@ -1,0 +1,114 @@
+:root {
+    --cor-fundo: #EEEEEE;
+    --cor-principal: #31363F;
+    --cor-destaque: #76ABAE;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: var(--cor-fundo);
+    color: var(--cor-principal);
+}
+
+.container {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+header {
+    background-color: var(--cor-principal);
+    color: var(--cor-fundo);
+    padding: 1.25rem;
+    text-align: center;
+}
+
+nav {
+    margin-top: 0;
+    background-color: var(--cor-destaque);
+    width: 100%;
+    height: 2.5rem;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0.65rem 0;
+}
+
+nav ul li {
+    margin: 0 1.4rem;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: var(--cor-principal);
+    font-weight: 700;
+}
+
+nav ul li a:hover {
+    color: var(--cor-fundo);
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.produtos{
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    padding: 5rem;
+    flex-wrap: wrap;
+}
+
+.card{
+    color: var(--cor-fundo);
+    border-radius: 0.5rem;
+    border: 1px solid var(--cor-principal);
+    padding: 1.5rem;
+    text-align: center;
+    flex-direction: column;
+}
+
+.card img{
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 0.5rem;
+}
+
+.card h2,p{
+    color: var(--cor-principal);
+}
+
+.card button{
+    background-color: var(--cor-destaque);
+    color: var(--cor-fundo);
+    border: none;
+    margin-top: 1rem;
+    cursor: pointer;
+    font-weight: 700;
+    padding: 0.5rem 1rem;
+}
+
+.card button:hover{
+    background-color: var(--cor-principal);
+    color: var(--cor-fundo);
+    transition: all 0.3s ease;
+}
+
+footer{
+    background-color: var(--cor-principal);
+    color: var(--cor-fundo);
+    padding: 1rem;
+    text-align: center;
+    width: 100%;
+    bottom: 0;
+    position: absolute;
+}
